@@ -306,28 +306,3 @@ main {
 .schedule-choice button {
     font-size: 20px;               /* ボタン文字*/
 }
-/* ===== スマホ対応 (最大幅 600px) ===== */
-@media (max-width: 600px) {
-    .footer-nav {
-        flex-direction: column; /* 縦並びにしてボタンを押しやすく */
-        gap: 10px;              /* ボタン間隔 */
-    }
-
-    .nav-button {
-        padding: 15px 0;        /* 上下余白を増やす */
-        font-size: 20px;        /* 文字サイズを大きく */
-        text-align: center;     /* 中央揃え */
-    }
-}
-@media (max-width: 600px) {
-    .popup-close {
-        font-size: 50px !important; /* 必ず優先させる */
-        top: 10px;
-        right: 10px;
-    }
-
-    .popup img {
-        max-width: 95%;  /* スマホ画面に合わせて大きく */
-        max-height: 95%;
-    }
-}
