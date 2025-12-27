@@ -95,7 +95,7 @@ header h1 {
     width: 45%;
 }
 
-.poster-left img {
+.poster-left img {/*画像*/
     width: 80%;
     cursor: pointer;
 }
@@ -327,7 +327,8 @@ main {
     .slogan-right,
     .song-left,
     .song-right { width: 100%; }
-
+    /*　フッターサイズ */
+    .nav-butto { font-size: 30px}
     /* フレックスを縦並びに */
     .slogan-section,
     .poster-section,
