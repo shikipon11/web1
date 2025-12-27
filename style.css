@@ -328,7 +328,15 @@ main {
     .song-left,
     .song-right { width: 100%; }
     /*　フッターサイズ */
-    .nav-butto { font-size: 30px}
+    .page-footer {
+        padding: 40px 0;  /* パディングを増やして高さアップ */
+        font-size: 30px;  /* ボタン文字も大きくする場合 */
+    }
+
+    .nav-button {
+        padding: 15px 30px; /* ボタン自体も大きく */
+        font-size: 30px;
+    }
     /* フレックスを縦並びに */
     .slogan-section,
     .poster-section,
