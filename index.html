@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- HTML5宣言 -->
+
+<html lang="ja"> <!-- 日本語ページ -->
+
+<head>
+    <meta charset="UTF-8"> <!-- 文字化け防止 -->
+    <title>ホーム｜文化祭</title> <!-- タブ名 -->
+    <link rel="stylesheet" href="style.css"> <!-- CSS読み込み -->
+</head>
+
+<body> <!-- ページ内容 -->
+
+    <!-- ===== 共通ヘッダー ===== -->
+    <header> <!-- 複数ページ共通：ヘッダー -->
+        <h1>第69回松尾祭</h1> <!-- 文化祭名 -->
+    </header>
+
+    <main> <!-- メインコンテンツ -->
+
+        <!-- ===== ホーム情報セクション ===== -->
+        <section class="home-info"> <!-- タイトル・サブタイトル・日付 -->
+            <h2>第69回松尾祭</h2> <!-- 正式タイトル -->
+            <p class="slogan">タイトル</p> <!-- サブタイトル／キャッチコピー -->
+            <p class="date">開催日</p> <!-- 開催日 -->
+        </section>
+
+        <hr class="section-line"> <!-- セクション区切り線 -->
+
+        <!-- ===== スローガンセクション ===== -->
+        <section class="slogan-section"> <!-- スローガンと込めた思い -->
+            <div class="slogan-left"> <!-- 左：スローガン -->
+                <h3>スローガン</h3>
+                <p><span class="no-break">「明日も頑張ろう」</span></p> <!-- 改行不可 -->
+            </div>
+            <div class="slogan-right"> <!-- 右：込めた思い -->
+                <p>思い</p>
+            </div>
+        </section>
+
+        <!-- ===== ポスター紹介セクション ===== -->
+        <section class="poster-section">
+            <!-- 左：ポスター -->
+            <div class="poster-left">
+                <a href="#poster-modal">
+                    <img src="images/poster.png" alt="文化祭ポスター">
+                </a>
+            </div>
+            <!-- 右：紹介文 -->
+            <div class="poster-right">
+                <h3>ポスター紹介文</h3>
+                <p>うんたらかんたら</p>
+            </div>
+        </section>
+
+        <!-- ===== ポスター拡大モーダル ===== -->
+        <div id="poster-modal" class="poster-modal">
+            <a href="#" class="close">×</a>
+            <img src="images/poster.png" alt="拡大ポスター">
+        </div>
+
+        <!-- ===== テーマソングセクション ===== -->
+        <section class="song-section">
+            <h2 class="section-title">テーマソング</h2>
+            <div class="song-main"> <!-- 横並び -->
+                <!-- 左：曲情報 -->
+                <div class="song-left">
+                    <p class="song-title">「○○」</p>
+                    <a href="URLをここに入れる" target="_blank" class="song-link">URL</a>
+                </div>
+                <!-- 右：込められた思い -->
+                <div class="song-right">
+                    <h3>込められた思い</h3>
+                    <p><!-- ここに込められた思い --></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 共通フッター ===== -->
+    <footer class="page-footer"> <!-- 複数ページ共通：フッター -->
+        <nav class="footer-nav">
+            <a href="map.html" class="nav-button">MAP</a>
+            <a href="schedule.html" class="nav-button">スケジュール</a>
+            <a href="food.html" class="nav-button">食べ物</a>
+            <a href="goods.html" class="nav-button">グッズ</a>
+            <a href="information.html" class="nav-button">インフォメーション</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
