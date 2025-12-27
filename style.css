@@ -306,3 +306,18 @@ main {
 .schedule-choice button {
     font-size: 20px;               /* ボタン文字*/
 }
+/* ===== スマホ対応 (最大幅 600px) ===== */
+@media (max-width: 600px) {
+    /* フッターナビボタンを大きく */
+    .nav-button {
+        padding: 15px 10px;  /* 余白増やす */
+        font-size: 18px;     /* 文字サイズ大きく */
+    }
+
+    /* ポップアップの閉じるボタンを大きく */
+    .popup-close {
+        font-size: 50px;     /* サイズアップ */
+        top: 10px;           /* 上の余白微調整 */
+        right: 10px;         /* 右の余白微調整 */
+    }
+}
