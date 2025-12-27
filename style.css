@@ -7,6 +7,9 @@ body {
     overflow-x: hidden;            /* 横スクロール防止 */
     background-color: #f5f5f5;     /* 必要なら */
 }
+main {
+    min-height: 100vh; /* ビューポート（画面）高さと同じに */
+}
 
 
 /* ===== 共通ヘッダー ===== */
@@ -184,6 +187,8 @@ header h1 {
     border-top: 2px solid #000;
     padding: 15px 0;
     box-sizing: border-box;        /* パディング込みで幅計算 */
+    z-index: 1000;
+
 }
 
 
