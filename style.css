@@ -1,7 +1,7 @@
 /* ===== 共通スタイル ===== */
 body {
     margin: 0;                     /* 余白リセット */
-    padding-bottom: 120px;         /* フッター分の余白確保 */
+    padding: 0;         /* フッター分の余白確保 */
     font-family: sans-serif;       /* 全体フォント */
     min-height: 100vh;             /* スマホでも画面いっぱいに */
     overflow-x: hidden;            /* 横スクロール防止 */
