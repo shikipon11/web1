@@ -311,34 +311,38 @@ main {
     font-size: 20px;               /* ボタン文字*/
 }
 /* ===== スマホ対応 ===== */
-@media (max-width: 768px) {
-    /* ホーム情報の文字サイズ調整 */
-    .home-info h2 { font-size: 40px; }
-    .home-info .slogan { font-size: 30px; }
-    .home-info .date { font-size: 20px; }
+@media (max-width: 1000px) {
+    /* ===== ホーム情報の文字サイズ調整 ===== */
+    .home-info h2 { font-size: 40px; }        /* タイトル文字を小さくして画面に収める */
+    .home-info .slogan { font-size: 30px; }  /* サブタイトルも縮小 */
+    .home-info .date { font-size: 20px; }    /* 日付も縮小 */
 
-    /* ポスター画像や横並びセクションの幅調整 */
-    .poster-left img { width: 100%; }
+    /* ===== ポスター画像や横並びセクションの幅調整 ===== */
+    .poster-left img { width: 100%; }        /* 画像を横幅いっぱいに */
     .slogan-section,
     .poster-section,
-    .song-section { width: 95%; }
+    .song-section { width: 95%; }            /* 横幅を少し余裕を持たせる */
 
+    /* ===== 左右カラムを縦並びに変更 ===== */
     .slogan-left,
     .slogan-right,
     .song-left,
-    .song-right { width: 100%; }
-    /*　フッターサイズ */
+    .song-right { width: 100%; }             /* 横幅100%で縦並びに */
+
+    /* ===== フッターサイズ調整（スマホ用） ===== */
     .page-footer {
-        padding: 40px 0;  /* パディングを増やして高さアップ */
-        font-size: 30px;  /* ボタン文字も大きくする場合 */
+        padding: 40px 0;                     /* フッターの高さを大きくして押しやすく */
+        font-size: 30px;                     /* フッターボタンの文字も大きく */
     }
 
     .nav-button {
-        padding: 15px 30px; /* ボタン自体も大きく */
-        font-size: 30px;
+        padding: 15px 30px;                  /* ボタン自体のサイズを大きく */
+        font-size: 30px;                      /* ボタン文字サイズも大きく */
     }
-    /* フレックスを縦並びに */
+
+    /* ===== フレックスを縦並びに変更 ===== */
     .slogan-section,
     .poster-section,
-    .song-main { flex-direction: column; }
+    .song-main { flex-direction: column; }  /* 横並びを縦並びに変更 */
 }
+
