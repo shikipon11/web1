@@ -1,0 +1,94 @@
+<!DOCTYPE html><!-- HTML5 -->
+
+<html lang="ja"><!-- 日本語 -->
+
+<head>
+    <meta charset="UTF-8"><!-- 文字コード -->
+    <title>校内MAP｜文化祭</title><!-- タブ名 -->
+    <link rel="stylesheet" href="style.css"><!-- CSS -->
+</head>
+
+<body><!-- 表示内容 -->
+
+    <!-- ヘッダー -->
+    <header>
+        <h1>校内MAP</h1><!-- ヘッダー文字 -->
+    </header>
+
+    <!-- メイン -->
+    <main>
+
+        <section class="map-section"><!-- MAPセクション -->
+
+            <!-- MAPを入れる場所 -->
+            <div class="map-area"><!-- MAP枠 -->
+                <!-- ここに校内MAPの画像や図を入れる -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MAP番号グリッド -->
+    <section class="map-grid-section">  
+        <div class="map-grid">
+            <div class="map-item" data-img="images/poster.png">
+                <span class="map-word">①画像</span>
+            </div>
+            <div class="map-item" data-img="images/poster.png">
+                <span class="map-word">②画像</span>
+            </div>
+            <div class="map-item" data-img="images/poster.png">
+                <span class="map-word">③画像</span>
+            </div>
+            <div class="map-item" data-img="images/poster.png">
+                <span class="map-word">④画像</span>
+            </div>
+            <div class="map-item" data-img="images/poster.png">
+                <span class="map-word">⑤画像</span>
+            </div>
+            <div class="map-item" data-img="images/poster.png">
+                <span class="map-word">⑥画像</span>
+            </div>
+            <!-- コピーで増やせる -->
+        </div>
+    </section>
+
+    <!-- ポップアップ用 -->
+    <div id="popup" class="popup">
+        <span id="popup-close" class="popup-close">&times;</span>
+        <img id="popup-img" src="" alt="ポップアップ画像">
+    </div>
+
+    <!-- 共通フッター -->
+    <footer class="page-footer">
+        <nav class="footer-nav">
+            <a href="index.html" class="nav-button">HOME</a>
+            <a href="schedule.html" class="nav-button">スケジュール</a>
+            <a href="food.html" class="nav-button">食べ物</a>
+            <a href="goods.html" class="nav-button">グッズ</a>
+            <a href="information.html" class="nav-button">インフォメーション</a>
+        </nav>
+    </footer>
+
+    <!-- JS：クリックでポップアップ表示 -->
+    <script>
+    document.querySelectorAll('.map-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const imgSrc = item.getAttribute('data-img'); // クリックされた画像
+            const popup = document.getElementById('popup');
+            const popupImg = document.getElementById('popup-img');
+
+            popupImg.src = imgSrc;
+            popup.style.display = 'flex'; // ポップアップ表示
+        });
+    });
+
+    // 閉じるボタン
+    document.getElementById('popup-close').addEventListener('click', () => {
+        document.getElementById('popup').style.display = 'none';
+    });
+    </script>
+
+</body>
+</html>
