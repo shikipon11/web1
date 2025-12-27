@@ -1,8 +1,13 @@
 /* ===== 共通スタイル ===== */
 body {
-    padding-bottom: 120px; /* フッター分の余白確保 */
-    font-family: sans-serif; /* 全体フォント */
+    margin: 0;                     /* 余白リセット */
+    padding-bottom: 120px;         /* フッター分の余白確保 */
+    font-family: sans-serif;       /* 全体フォント */
+    min-height: 100vh;             /* スマホでも画面いっぱいに */
+    overflow-x: hidden;            /* 横スクロール防止 */
+    background-color: #f5f5f5;     /* 必要なら */
 }
+
 
 /* ===== 共通ヘッダー ===== */
 header { 
@@ -171,14 +176,16 @@ header h1 {
 
 /* ===== 共通フッター ===== */
 .page-footer {
-    position: fixed;
+    position: fixed;               /* 固定 */
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #fff;
     border-top: 2px solid #000;
     padding: 15px 0;
+    box-sizing: border-box;        /* パディング込みで幅計算 */
 }
+
 
 .footer-nav {
     display: flex;
@@ -273,13 +280,6 @@ header h1 {
 }
 
 /* ============================== スケジュール選択　======================================= */
-/* ページ全体 */
-body {
-    font-family: sans-serif;      /* フォント */
-    margin: 0;                     /* 余白なし */
-    padding: 0;
-    background-color: #f5f5f5;    /* 控えめな背景 */
-}
 
 /* ヘッダー */
 header {
@@ -305,4 +305,27 @@ main {
 /* ボタン */
 .schedule-choice button {
     font-size: 20px;               /* ボタン文字*/
+}
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+    /* ホーム情報の文字サイズ調整 */
+    .home-info h2 { font-size: 40px; }
+    .home-info .slogan { font-size: 30px; }
+    .home-info .date { font-size: 20px; }
+
+    /* ポスター画像や横並びセクションの幅調整 */
+    .poster-left img { width: 100%; }
+    .slogan-section,
+    .poster-section,
+    .song-section { width: 95%; }
+
+    .slogan-left,
+    .slogan-right,
+    .song-left,
+    .song-right { width: 100%; }
+
+    /* フレックスを縦並びに */
+    .slogan-section,
+    .poster-section,
+    .song-main { flex-direction: column; }
 }
