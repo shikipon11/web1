@@ -1,0 +1,267 @@
+body {
+    padding-bottom: 120px; /* フッター分の余白 */
+}
+
+header {
+    background-color: #f5f5f5; /* 背景色 */
+    padding: 20px;             /* 余白 */
+    border-bottom: 3px solid #000; /* 区切り線 */
+}
+
+header h1 {
+    color: #000;        /* 色 */
+    margin: 0;          /* 余白 */
+    text-align: center; /* 中央揃え */
+}
+
+.home-info {
+    text-align: center; /* 中央揃え */
+}
+
+/* ===== 松尾祭 ===== */
+.home-info h2 {
+    font-size: 100px;   /* 文字サイズ */
+    font-family: serif;/* フォント */
+    color: #000;        /* 色 */
+    line-height: 1.0;   /* 行間 */
+    margin-bottom: 0;  /* 余白 */
+}
+
+/* ===== タイトル ===== */
+.home-info .slogan {
+    font-size: 75px;        /* 文字サイズ */
+    font-family: sans-serif;/* フォント */
+    color: #333;            /* 色 */
+    line-height: 1.0;       /* 行間 */
+    margin-bottom: 0;       /* 余白 */
+}
+
+/* ===== 開催日 ===== */
+.home-info .date {
+    font-size: 50px;        /* 文字サイズ */
+    font-family: sans-serif;/* フォント */
+    color: #666;            /* 色 */
+}
+
+/* ===== 区切りの線 ===== */
+.section-line {
+    border: none;           /* 線なし */
+    border-top: 2px solid #000; /* 区切り線 */
+    margin: 30px auto;      /* 余白 */
+}
+
+.slogan-section {
+    display: flex;          /* 横並び */
+    justify-content: space-between; /* 左右配置 */
+    width: 80%;             /* 横幅 */
+    margin: 0 auto;         /* 中央配置 */
+}
+
+/* ===== 左：スローガン ===== */
+.slogan-left {
+    font-size: 50px;        /* 文字サイズ */
+    font-family: sans-serif;/* フォント */
+    color: #000;            /* 色 */
+    line-height: 1.2;       /* 行間 */
+    margin-bottom: 0;       /* 余白 */
+    width: 45%;             /* 幅 */
+}
+
+/* ===== 右：込めた思い ===== */
+.slogan-right {
+    font-size: 30px;        /* 文字サイズ */
+    font-family: sans-serif;/* フォント */
+    color: #000;            /* 色 */
+    line-height: 1.6;       /* 行間 */
+    width: 45%;             /* 幅 */
+}
+/* ===== ポスター紹介 ===== */
+.poster-section {
+    display: flex;                  /* 横並び */
+    justify-content: space-between; /* 左右 */
+    width: 80%;                     /* 横幅 */
+    margin: 50px auto;              /* 余白 */
+}
+
+/* 左：ポスター */
+.poster-left {
+    width: 45%;                     /* 幅 */
+}
+
+.poster-left img {
+    width: 80%;                    /* サイズ */
+    cursor: pointer;                /* カーソル */
+}
+
+/* 右：紹介文 */
+.poster-right {
+    width: 45%;                     /* 幅 */
+    font-size: 25px;                /* サイズ */
+    line-height: 1.5;               /* 行間 */
+}
+
+/* 拡大表示 */
+.poster-modal {
+    display: none;                  /* 非表示 */
+    position: fixed;                /* 固定 */
+    top: 0;
+    left: 0;
+    width: 100%;                    /* 横 */
+    height: 100%;                   /* 縦 */
+    background: rgba(0,0,0,0.8);    /* 色 */
+    text-align: center;             /* 中央 */
+}
+
+.poster-modal:target {
+    display: block;                 /* 表示 */
+}
+
+.poster-modal img {
+    max-width: 80%;                 /* 最大 */
+    margin-top: 50px;               /* 余白 */
+}
+
+/* 閉じる */
+.poster-modal .close {
+    color: #fff;                    /* 色 */
+    font-size: 80px;                /* サイズ */
+    text-decoration: none;          /* 下線なし */
+    position: absolute;             /* 位置 */
+    top: 20px;
+    right: 30px;
+}
+/* ===== テーマソング ===== */
+.song-section {
+    width: 80%;          /* 横幅 */
+    margin: 50px auto;      /* 余白 */
+    margin-bottom: 120px;   /* 余白 */
+}
+
+/* セクションタイトル */
+.section-title {
+    text-align: left;  /* 左より */
+    font-size: 50px;     /* サイズ */
+    margin-bottom: 40px;/* 余白 */
+}
+
+/* メイン部分 */
+.song-main {
+    display: flex;                  /* 横並び */
+    justify-content: space-between; /* 左右 */
+}
+
+/* 左：曲情報 */
+.song-left {
+    width: 40%;         /* 幅 */
+    text-align: center; /* 中央 */
+}
+
+/* 曲タイトル */
+.song-title {
+    font-size: 40px;    /* サイズ */
+    font-weight: bold;  /* 太さ */
+    margin-bottom: 20px;/* 余白 */
+}
+
+/* URL */
+.song-link {
+    font-size: 20px;    /* サイズ */
+    color: #0066cc;     /* 色 */
+    text-decoration: underline; /* 下線 */
+}
+
+/* 右：思い */
+.song-right {
+    width: 55%;         /* 幅 */
+    font-size: 22px;    /* サイズ */
+    line-height: 1.6;  /* 行間 */
+}
+/* ====フッター==== */
+.page-footer {
+    position: fixed;        /* 固定 */
+    bottom: 0;              /* 下 */
+    left: 0;                /* 左 */
+    width: 100%;            /* 横幅 */
+    background-color: #fff; /* 背景 */
+    border-top: 2px solid #000; /* 線 */
+    padding: 15px 0;        /* 余白 */
+}
+
+/* ナビ */
+.footer-nav {
+    display: flex;                 /* 横並び */
+    justify-content: space-around; /* 均等配置 */
+    align-items: center;           /* 高さ中央 */
+    max-width: 800px;              /* 最大幅 */
+    margin: 0 auto;                /* 中央寄せ */
+}
+
+
+/* ボタン */
+.nav-button {
+    padding: 10px 20px;      /* 余白 */
+    border: 1px solid #000;  /* 枠 */
+    text-decoration: none;  /* 下線 */
+    color: #000;             /* 色 */
+    font-size: 16px;         /* サイズ */
+}
+
+/* ホバー */
+.nav-button:hover {
+    background-color: #000; /* 色 */
+    color: #fff;             /* 色 */
+}
+/* ======= MAP(2ページ目) ======== */
+.map-section {
+    width: 80%;          /* 横幅 */
+    margin: 50px auto;   /* 余白 */
+}
+
+/* MAPエリア */
+.map-area {
+    width: 100%;         /* 横 */
+    height: 500px;       /* 高さ */
+    border: 2px solid #000; /* 枠 */
+}
+.map-info {
+    position: relative; /* 説明を重ねる準備 */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.map-grid {
+    display: grid;                  /* グリッドレイアウト */
+    grid-template-columns: repeat(5, 1fr); /* 横5列 */
+    gap: 20px 0px;                 /* 行・列の間隔（行:20px,列:40px） */
+    justify-content: center;         /* グリッド全体を中央寄せ */
+    margin: 50px auto;               /* 上下の余白 */
+     max-width: 800px;
+}
+
+.map-item {
+    position: relative;             /* ツールチップ用 */
+    text-align: center;             /* 各アイテム中央 */
+}
+
+.map-word {
+    font-size: 18px;                /* 番号文字サイズ */
+    cursor: pointer;                /* ホバー感 */
+}
+
+.map-tooltip {
+    visibility: hidden;             /* 初期非表示 */
+    background-color: #000;         /* 黒背景 */
+    color: #fff;                    /* 白文字 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;                      /* 単語の下 */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.map-item:hover .map-tooltip {
+    visibility: visible;            /* ホバーで表示 */
+}
+
