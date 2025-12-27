@@ -5,12 +5,11 @@ body {
     font-family: sans-serif;       /* 全体フォント */
     min-height: 100vh;             /* スマホでも画面いっぱいに */
     overflow-x: hidden;            /* 横スクロール防止 */
-    background-color: #f5f5f5;     /* 必要なら */
+    background-color: #f5f5f5;     /* 色 */
 }
 main {
     min-height: 100vh; /* ビューポート（画面）高さと同じに */
 }
-
 
 /* ===== 共通ヘッダー ===== */
 header { 
@@ -279,7 +278,7 @@ header h1 {
     position: absolute;
     top: 20px;
     right: 30px;
-    font-size: 30px;   /* サイズ */
+    font-size: 80px;   /* サイズ */
     color: #fff;       /* 色 */
     cursor: pointer;   /* クリック感 */
 }
